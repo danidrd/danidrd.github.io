@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente */
+}
+
+.container img {
+    margin-right: 20px; /* Aggiunge spazio tra l'immagine e i link */
+}
+
+.links a {
+    display: block; /* Rende ogni link un blocco, quindi vanno uno sotto l'altro */
+    margin-bottom: 10px; /* Opzionale: aggiunge spazio tra i link */
+}
+
