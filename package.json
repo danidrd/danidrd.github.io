@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.1.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^4.2.4"
@@ -46,5 +47,5 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
   },
-  "homepage": "https://danidrd.github.io"
+  "homepage": "https://danidrd.github.io/"
 }
