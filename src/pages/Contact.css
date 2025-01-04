@@ -1,21 +1,80 @@
-.contact-container {
+  /* Navigation styles */
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centers the links horizontally */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Spacing between links */
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+    /* Make the body and html fill the entire viewport */
+  html, body {
+    height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f5f5dc;
-    color: #333;
-    font-family: 'Arial', sans-serif;
+  }
+
+  /* The main content container */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Ensures the footer grows correctly */
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 20px;
+    background: #fff;
     text-align: center;
   }
-  
-  .contact-container h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+
+  .contact h2 {
+    color: #333;
+    margin-bottom: 10px;
   }
-  
-  .contact-container p {
-    font-size: 1.5rem;
+
+  .contact ul {
+    list-style: none;
+    padding: 0;
   }
-  
+
+  .contact li {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+
+  .contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #333;
+  }
+  .footer-container {
+    height: 100px;
+    width: 100vw;
+  }

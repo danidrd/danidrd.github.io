@@ -1,21 +1,85 @@
-.home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f8ff;
-    color: #333;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-  }
-  
-  .home-container h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .home-container p {
-    font-size: 1.5rem;
-  }
-  
+/* Navigation styles */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centers the links horizontally */
+}
+
+nav ul li {
+  margin: 0 10px; /* Spacing between links */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Make the body and html fill the entire viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the page container fills the viewport */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+/* The main content container */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Ensures the footer grows correctly */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  background-color: #333;
+}
+.footer-container {
+  height: 100px;
+  width: 100vw;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #555;
+}
+
+.hero a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+}
