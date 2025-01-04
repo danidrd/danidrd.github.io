@@ -8,11 +8,7 @@ import About from "./pages/About";
 function App() {
   return (
     <HelmetProvider>
-      <Router
-        basename={
-          process.env.NODE_ENV === "production" ? "/danidrd.github.io" : "/"
-        }
-      >
+      <Router basename="/">
         <nav>
           <ul>
             <li>
