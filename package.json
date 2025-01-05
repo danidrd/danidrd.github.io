@@ -47,5 +47,10 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
   },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danidrd/danidrd.github.io.git"
+  },
   "homepage": "https://danidrd.com"
 }
