@@ -8,7 +8,7 @@ import About from "./pages/About";
 function App() {
   return (
     <HelmetProvider>
-      <Router basename="/">
+      <Router basename="https://danidrd.com">
         <nav>
           <ul>
             <li>
