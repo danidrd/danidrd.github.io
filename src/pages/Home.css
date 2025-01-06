@@ -75,12 +75,19 @@ html, body {
   text-decoration: underline;
   color: #0056b3;
 }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evita lo scrolling orizzontale indesiderato */
+}
+
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
-  width: 100%; /* Assicurati che il contenitore della griglia utilizzi tutto lo spazio disponibile */
+  width: 100%; /* Assicurati che la griglia usi tutto lo spazio disponibile */
   box-sizing: border-box;
 }
 
@@ -92,14 +99,14 @@ html, body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
-  flex-direction: column; /* Assicura che immagine e testo siano in colonna */
+  flex-direction: column; /* Per disporre immagine e testo in colonna */
   align-items: center;
 }
 
 .event img {
   width: 100%; /* L'immagine si adatta al contenitore */
-  max-width: 300px; /* Limita la larghezza massima */
-  height: auto; /* Mantiene le proporzioni */
+  max-width: 300px; /* Larghezza massima */
+  height: auto; /* Mantieni proporzioni */
   border-radius: 8px;
   margin-bottom: 10px;
   transition: transform 0.2s;
@@ -117,6 +124,12 @@ html, body {
 .event p {
   color: #666;
   font-size: 1em;
+}
+
+/* Assicura che il contenuto sia scrollabile */
+html, body {
+  height: 100%;
+  overflow-y: auto; /* Abilita lo scrolling verticale */
 }
 
 
