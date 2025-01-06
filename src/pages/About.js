@@ -4,7 +4,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div>
+    <div className="pageContainer">
       <Helmet>
         <title>Danidrd - About</title>
       </Helmet>
@@ -14,17 +14,26 @@ function About() {
         <p>
           My name is Daniele Caliandro, and I graduated in Computer Science from
           the University of Pisa. Currently, I am pursuing a Master's degree in
-          Computer Science and Networking. My interests span across various
-          areas, including system programming, High-Performance Computing (HPC),
-          and higher-level concepts like DevOps—a field I am still exploring
-          from the basics but am eager to master. I have a passion for
-          programming languages, with a particular fondness for functional and
-          procedural paradigms. That said, I also enjoy working with class-based
-          and object-based languages. My journey is driven by curiosity and a
-          constant desire to deepen my knowledge and skills in both fundamental
-          and cutting-edge topics in computer science.
+          Computer Science and Networking.
+        </p>
+        <p>
+          My interests span across various areas, including system programming,
+          High-Performance Computing (HPC), and higher-level concepts like
+          DevOps—a field I am still exploring from the basics but am eager to
+          master.
+        </p>
+        <p>
+          I have a passion for programming languages, with a particular fondness
+          for functional and procedural paradigms. That said, I also enjoy
+          working with class-based and object-based languages.
+        </p>
+        <p>
+          My journey is driven by curiosity and a constant desire to deepen my
+          knowledge and skills in both fundamental and cutting-edge topics in
+          computer science.
         </p>
       </section>
+
       {/* Footer */}
       <div className="footer-container">
         <footer className="footer">

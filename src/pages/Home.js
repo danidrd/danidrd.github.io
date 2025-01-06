@@ -35,8 +35,45 @@ function Home() {
         </p>
       </section>
 
+      <div className="events-grid">
+        <div className="event">
+          <a href="https://discord.gg/TysjrUbe9r">
+            <img src="rss.png" alt="RSS Feed Bot Creation" />
+          </a>
+          <h3>RSS Feed Bot Creation</h3>
+          <p>
+            We are developing an RSS Feed bot to gather articles and news about
+            programming languages and other.
+          </p>
+        </div>
+        <div className="event">
+          <a href="https://github.com/matteogiorgi/qint">
+            <img src="interviews.png" alt="Coding Interviews Preparation" />
+          </a>
+          <h3>Coding Interviews Preparation</h3>
+          <p>
+            Join us to improve your skill and get ready to ace Coding Interviews
+          </p>
+        </div>
+        <div className="event">
+          <h3>Prova</h3>
+        </div>
+        {/* <div className="event">
+          <h3>Evento 3</h3>
+          <p>Descrizione dell'evento o obiettivo.</p>
+        </div>
+        <div className="event">
+          <h3>Evento 4</h3>
+          <p>Descrizione dell'evento o obiettivo.</p>
+        </div>
+        <div className="event">
+          <h3>Evento 5</h3>
+          <p>Descrizione dell'evento o obiettivo.</p>
+        </div> */}
+      </div>
+
       {/* Footer Section */}
-      <div class="footer-container">
+      <div className="footer-container">
         <footer className="footer">
           <p>&copy; 2025 Danidrd. All Rights Reserved.</p>
           <p>
