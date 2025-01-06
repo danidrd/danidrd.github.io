@@ -1,0 +1,171 @@
+/* The main content container */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensures it expands as needed */
+}
+nav ul {
+  display: flex;
+  flex-direction: row; /* Mantieni orizzontale */
+  justify-content: center; /* Centra gli elementi */
+  list-style: none; /* Rimuovi i puntini */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px; /* Spaziatura orizzontale tra gli elementi */
+}
+
+nav ul li a {
+  text-decoration: none; /* Rimuovi la sottolineatura */
+  color: #007bff; /* Colore del link */
+  font-size: 1rem; /* Dimensione del testo */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0056b3; /* Colore quando il mouse passa sopra */
+}
+
+/* Footer sempre in basso */
+.footer {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Spinge il footer in basso */
+  position: sticky;
+  bottom: 0;
+  width: 100%; /* Assicura che occupi tutta la larghezza */
+}
+
+.footer-link {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+main {
+  flex: 1;
+  flex-grow: 1; /* Permette al main di espandersi */
+  padding-bottom: 1rem; /* Spazio inferiore per il footer */
+}
+
+/* Imposta il layout della pagina */
+html,
+body {
+  height: 100%; /* Fai in modo che occupi tutta l'altezza del viewport */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: row; /* Stacks navigation links horizzontaly */
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .events-grid {
+    gap: 1rem;
+  }
+
+  .event {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row; /* Stacks navigation links horizzontaly */
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 7px;
+  }
+
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .events-grid {
+    gap: 0.75rem;
+  }
+
+  .event {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: row; /* Stacks navigation links horizzontaly */
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .event {
+    padding: 0.5rem;
+  }
+
+  .event h3 {
+    font-size: 1rem;
+  }
+}
