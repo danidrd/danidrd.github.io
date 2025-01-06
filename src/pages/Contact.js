@@ -47,17 +47,16 @@ function Contact() {
       </section>
 
       {/* Footer */}
-      <div className="footer-container">
-        <footer className="footer">
-          <p>© 2025 Danidrd. All Rights Reserved.</p>
-          <p>
-            Contact:{" "}
-            <a href="mailto:danielecaliandro.dev@gmail.com">
-              danielecaliandro.dev@gmail.com
-            </a>
-          </p>
-        </footer>
-      </div>
+
+      <footer className="footer">
+        <p>© 2025 Danidrd. All Rights Reserved.</p>
+        <p>
+          Contact:{" "}
+          <a href="mailto:danielecaliandro.dev@gmail.com">
+            danielecaliandro.dev@gmail.com
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }

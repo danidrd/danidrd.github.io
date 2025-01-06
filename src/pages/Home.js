@@ -37,7 +37,7 @@ function Home() {
           </p>
         </section>
 
-        <div className="events-grid">
+        <div className="events-grid" style={{ marginBottom: "10rem" }}>
           <div className="event">
             <a href="https://discord.gg/TysjrUbe9r">
               <img src="rss.png" alt="RSS Feed Bot Creation" />
