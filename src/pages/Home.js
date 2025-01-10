@@ -4,6 +4,13 @@ import "./Home.css";
 import "./global.css";
 
 function Home() {
+  const handleClick = () => {
+    // Tracking with Google Analytics
+    window.SVGAnimatedAngle("event", "click", {
+      event_category: "Link",
+      event_label: "Discord Invite",
+    });
+  };
   return (
     <div className="pageContainer">
       <Helmet>
@@ -39,7 +46,12 @@ function Home() {
 
         <div className="events-grid" style={{ marginBottom: "10rem" }}>
           <div className="event">
-            <a href="https://discord.gg/TysjrUbe9r">
+            <a
+              href="https://discord.gg/TysjrUbe9r"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleClick}
+            >
               <img src="rss.png" alt="RSS Feed Bot Creation" />
             </a>
             <h3>RSS Feed Bot Creation</h3>

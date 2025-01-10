@@ -4,6 +4,20 @@ import "./Contact.css";
 import "./global.css";
 
 function Contact() {
+  const handleClickDiscord = () => {
+    window.gtag("event", "click", {
+      event_category: "Link",
+      event_label: "Discord Invite",
+    });
+  };
+
+  const handleClickTelegram = () => {
+    window.gtag("event", "click", {
+      event_category: "Link",
+      event_label: "Telegram Invite",
+    });
+  };
+
   return (
     <div>
       <Helmet>
@@ -29,6 +43,7 @@ function Contact() {
               href="https://discord.gg/TysjrUbe9r"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleClickDiscord}
             >
               Join our Coding Hub
             </a>
@@ -39,6 +54,7 @@ function Contact() {
               href="https://t.me/dcaliandro"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleClickTelegram}
             >
               @dcaliandro
             </a>
